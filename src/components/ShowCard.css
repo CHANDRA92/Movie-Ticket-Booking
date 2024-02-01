@@ -1,0 +1,35 @@
+/* components/ShowCard.css */
+
+.card1 {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card {
+    transition: transform 0.2s ease-in-out;
+    height: 100%; /* Ensures the card takes full height of the parent */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    min-height: 100px; /* Set a minimum height for the card body */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    flex-grow: 1;
+  }
+  
+  .btn-primary {
+    margin-top: 10px;
+  }
+  
