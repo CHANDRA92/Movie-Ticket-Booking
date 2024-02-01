@@ -7,8 +7,8 @@ const ShowCard = ({ show }) => {
   const imageUrl = show.image?.medium || 'https://dummyimage.com/2160x3050/181818/ffffff.jpg&text=Image+not+found.';
 
   return (
-    <>
-      <Link to={`/show/${show.id}`} className="card1">
+    <div className='col'>
+      <Link to={`/show/${show.id}`} className="card1 card">
         <div className="card h-100 shadow-sm">
           <img src={imageUrl} className="card-img-top" alt={show.name} />
           <div className="card-body">
@@ -20,7 +20,7 @@ const ShowCard = ({ show }) => {
           </div>
         </div>
       </Link>
-    </>
+    </div>
   );
 };
 
