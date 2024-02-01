@@ -106,7 +106,7 @@ const HomeScreen = () => {
       </div>
   
       <div className='container p-2'>
-      <div className='row row-cols-1 row-cols-md-4 g-2'> 
+      <div className='w-100 row row-cols-1 row-cols-md-4 g-2'> 
         {filterShows().length === 0 ? (
           <p>No shows found!</p>
         ) : (
@@ -116,6 +116,7 @@ const HomeScreen = () => {
         )}
       </div>
       </div>
+
     </div>
   )
 };
